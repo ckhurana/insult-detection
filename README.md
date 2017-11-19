@@ -1,10 +1,32 @@
-# Insult Detection
+# Insult Detection in Social Commentary
 
-Insult Detection in Social Commentary (NLP)
+Main goal of this project is to detect if a comment or a post online is an insult or
+not using various machine learning techniques.
+
+## Working Demo
+* [Insult Detection](http://labs.chiragkhurana.com/iiitd/nlp/insult-detection) - Enter a test a sentence to tag it.
+* [Insult Detection on Live Tweets](http://labs.chiragkhurana.com/iiitd/nlp/insult-detection-twitter) - Enter a query to search related to it.
 
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+## File Structure
+
+* ___root___
+ * __data__ - Contains the data sets for the project
+ * __src__
+  * _main.py_ - Main entry point
+  * _ensemble.py_ - Ensembling code
+  * _preprocess.py_ - Helper preprocessing code
+  * _features.py_ - Helper feature extraction code
+ * __interactive__ - Contains the jupyter notebook for interactive project representation
+ * __ppt__ - The Presentation (ppt and pdf)
+ * __misc__ - Some miscellaneous files (Sample Output.txt)
+ * __visualise__ - Various graphs and curves for different Classification techniques used
+ * _requirements.txt_ - Requirements file for installed modules.
+ * _README.md_ - Readme file in MarkDown format
+ * _README.pdf_ - Readme in portable document format
 
 ### Prerequisites
 
@@ -26,10 +48,12 @@ pip install -r requirements.txt
 
 ### Installing
 
-A step by step series of examples that tell you have to get a development env running
+Follow the following steps to setup a virtual environment to run the project
 
 0. Install Python 3.5.x
- - Refer the internet for installing python.
+```
+Refer the internet for installing python.
+```
  
 1. Setup virtual environment [Optional]
 ```
@@ -46,73 +70,68 @@ source venv/bin/activate
 
 # For Windows - PowerShell
 .\venv\Scripts\activate.ps1]
+
+# The CLI will have a (venv) at the beginning of every line from now on.
 ```
-The CLI will have a (venv) at the beginning of every line from now on.
 
 3. Installing the required modules
 ```
 pip install -r requirements.txt
 ```
 
-
-And repeat
-
+4. Run the main file for the project
 ```
-until finished
+cd src
+python main.py
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+## Interactive Testing
 
+To test the project and visualize the project more intuitively, try using our jupyter notebook.
+Note: Make sure to try the following with environment properly set up.
+```
+cd interactive
+jupyter notebook
+```
+A brower tab will open with the notebooks listed.
+Try the _Presentation.ipynb_ to use the project file.
+Then use the the notebook in a standard way.
+ 
 ## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
 ```
-Give an example
+cd src
+python main.py
 ```
+The above should provide with all the usefull information neccessary including _Accuracy score, Confusion matrices, ROC Curves, Area Under Curve score_.
 
-### And coding style tests
+### Result Interpretation
 
-Explain what these tests test and why
+* The __confusion matrix__ helps represemt the precision and recall of a classifier.
+* The __accuracy score__ gives the percentage of accurate predictions by the model.
+* The __ROC AUC__ of a classifier is equal to the probability that the classifier will rank a randomly chosen positive example higher than a randomly chosen negative example, i.e. P(score(x+)>score(x−))
 
-```
-Give an example
-```
+## Train data and Test data
 
-## Deployment
+To test a custom set of data, some modifications in the code needs to be done, as the code in its natural form splits the train data in the train and test sets, therefore using a seperate file to test data requires minor configuration changes in the code.
+Although this can be done easily in the Jupyter notebook available in the package.
 
-Add additional notes about how to deploy this on a live system
+### The training and test data
+> Source [Kaggle](https://www.kaggle.com/c/detecting-insults-in-social-commentary)
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
+* [Jupyter](http://jupyter.org/) - Interactive computing
+* [Scikit-Learn](http://scikit-learn.org/stable/documentation.html) - Machine Learning and Classification Library
+* [NLTK](http://www.nltk.org/) - Generic NLP tasks
+* [spaCy](https://spacy.io/) - Advanced and intuitive NLP tasks (dependency parsing)
+ 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* [**Chirag Khurana**](http://chiragkhurana.com) - [Github](https://github.com/ckhurana)
+* **Shubham Goyal** - [Github](https://github.com/imshubhamgoyal)
+* **Pallavi Rawat** - [Github](https://github.com/PallaviSRawat)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* [__Tanmoy Chakraborty__](https://sites.google.com/site/tanmoychakra88/) - Mentor / Instructor
