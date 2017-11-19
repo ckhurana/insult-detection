@@ -1,0 +1,28 @@
+Output of main.py
+
+D:\Workspace\IIITD\iiitd-mtech-nlp-proj\venv\Scripts\python.exe D:/Workspace/IIITD/iiitd-mtech-nlp-proj/project/main.py
+Starting MultinomialNB Classifier
+Naive Bayes (Word Gram): 0.696853146853
+Naive Bayes (Character Gram): 0.739160839161
+Naive Bayes (Word): Normalized confusion matrix
+Naive Bayes (Character): Normalized confusion matrix
+MultinomialNB (Character Gram): ROC Curve
+MultinomialNB AUC (Word Gram): 0.823507740499
+MultinomialNB (Character Gram): ROC Curve
+MultinomialNB AUC (Character Gram): 0.839470953356
+Starting SVM Classifier
+LinearSVC (SVM) (Word Gram): 0.762237762238
+LinearSVC (SVM) (Character Gram): 0.792307692308
+LinearSVC (SVM) (Word Gram): Normalized confusion matrix
+LinearSVC (SVM) (Character Gram): Normalized confusion matrix
+Starting Logistic Regression
+Logistic Regression (Word Gram): 0.711538461538
+Logistic Regression (Character Gram): 0.763286713287
+Logistic Regression (Word Gram): Normalized confusion matrix
+Logistic Regression (Character Gram): Normalized confusion matrix
+Logistic Regression (Word Gram): ROC Curve
+LogisticRegression AUC (Word Gram): 0.83711196238
+Logistic Regression (Character Gram): ROC Curve
+LogisticRegression AUC (Character Gram): 0.855834403848
+
+Process finished with exit code 0
