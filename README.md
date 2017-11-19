@@ -3,6 +3,8 @@
 Main goal of this project is to detect if a comment or a post online is an insult or
 not using various machine learning techniques.
 
+> [__Github Repository__ ](https://github.com/ckhurana/insult-detection/) 
+
 ## Working Demo
 * [Insult Detection](http://labs.chiragkhurana.com/iiitd/nlp/insult-detection) - Enter a test a sentence to tag it.
 * [Insult Detection on Live Tweets](http://labs.chiragkhurana.com/iiitd/nlp/insult-detection-twitter) - Enter a query to search related to it.
