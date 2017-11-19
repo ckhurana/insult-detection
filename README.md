@@ -4,7 +4,7 @@ Insult Detection in Social Commentary (NLP)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -19,19 +19,41 @@ These instructions will get you a copy of the project up and running on your loc
   * matplotlib==2.0.2
   * virtualenv==15.1.0 [Optional]
 
+Or you can directly install all the required modules along with dependencies using requirements.txt file.
 ```
-Give examples
+pip install -r requirements.txt
 ```
 
 ### Installing
 
 A step by step series of examples that tell you have to get a development env running
 
-Say what the step will be
+0. Install Python 3.5.x
+ - Refer the internet for installing python.
+ 
+1. Setup virtual environment [Optional]
+```
+virtualenv -p python3 venv
+```
 
+2. Use the virtual env for further work [Optional]
 ```
-Give the example
+# For Ubuntu/Linux
+source venv/bin/activate
+
+# For Windows - CommandPrompt
+.\venv\Scripts\activate.bat
+
+# For Windows - PowerShell
+.\venv\Scripts\activate.ps1]
 ```
+The CLI will have a (venv) at the beginning of every line from now on.
+
+3. Installing the required modules
+```
+pip install -r requirements.txt
+```
+
 
 And repeat
 
