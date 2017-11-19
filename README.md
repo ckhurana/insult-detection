@@ -13,20 +13,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## File Structure
 
-* ___root___
- * __data__ - Contains the data sets for the project
- * __src__
-  * _main.py_ - Main entry point
-  * _ensemble.py_ - Ensembling code
-  * _preprocess.py_ - Helper preprocessing code
-  * _features.py_ - Helper feature extraction code
- * __interactive__ - Contains the jupyter notebook for interactive project representation
- * __ppt__ - The Presentation (ppt and pdf)
- * __misc__ - Some miscellaneous files (Sample Output.txt)
- * __visualise__ - Various graphs and curves for different Classification techniques used
- * _requirements.txt_ - Requirements file for installed modules.
- * _README.md_ - Readme file in MarkDown format
- * _README.pdf_ - Readme in portable document format
+- ___root___
+    * __data__ - Contains the data sets for the project
+    * __src__
+        * _main.py_ - Main entry point
+        * _ensemble.py_ - Ensembling code
+        * _preprocess.py_ - Helper preprocessing code
+        * _features.py_ - Helper feature extraction code
+    * __interactive__ - Contains the jupyter notebook for interactive project representation
+    * __ppt__ - The Presentation (ppt and pdf)
+    * __misc__ - Some miscellaneous files (Sample Output.txt)
+    * __visualise__ - Various graphs and curves for different Classification techniques used
+    * _requirements.txt_ - Requirements file for installed modules.
+    * _README.md_ - Readme file in MarkDown format
+    * _README.pdf_ - Readme in portable document format
 
 ### Prerequisites
 
