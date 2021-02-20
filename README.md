@@ -79,6 +79,7 @@ source venv/bin/activate
 3. Installing the required modules
 ```
 pip install -r requirements.txt
+python -m spacy dowmload en_core_web_sm
 ```
 
 4. Run the main file for the project
