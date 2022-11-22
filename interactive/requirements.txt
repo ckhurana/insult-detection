@@ -60,7 +60,7 @@ pathy==0.3.6
 pep517==0.8.2
 pexpect==4.8.0
 pickleshare==0.7.5
-Pillow==8.1.0
+Pillow==9.3.0
 preshed==3.0.5
 progress==1.5
 prometheus-client==0.9.0
